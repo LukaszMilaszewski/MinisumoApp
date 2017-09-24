@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8E1391161F687BB400A16458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1391151F687BB400A16458 /* AppDelegate.swift */; };
-		8E1391181F687BB400A16458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1391171F687BB400A16458 /* ViewController.swift */; };
+		8E1391181F687BB400A16458 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1391171F687BB400A16458 /* MainViewController.swift */; };
 		8E13911B1F687BB400A16458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1391191F687BB400A16458 /* Main.storyboard */; };
 		8E13911D1F687BB400A16458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E13911C1F687BB400A16458 /* Assets.xcassets */; };
 		8E1391201F687BB400A16458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E13911E1F687BB400A16458 /* LaunchScreen.storyboard */; };
 		8E1391281F687BC400A16458 /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1391271F687BC400A16458 /* BluetoothSerial.swift */; };
+		8E13912A1F687DB800A16458 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1391291F687DB800A16458 /* ScannerViewController.swift */; };
+		8E13912C1F687DEE00A16458 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13912B1F687DEE00A16458 /* InitialViewController.swift */; };
+		8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */; };
+		8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E1391121F687BB400A16458 /* MinisumoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinisumoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1391151F687BB400A16458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E1391171F687BB400A16458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E1391171F687BB400A16458 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8E13911A1F687BB400A16458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E13911C1F687BB400A16458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E13911F1F687BB400A16458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E1391211F687BB400A16458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E1391271F687BC400A16458 /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; tabWidth = 2; };
+		8E1391291F687DB800A16458 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		8E13912B1F687DEE00A16458 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMotorsViewController.swift; sourceTree = "<group>"; };
+		8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckSensorsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +51,9 @@
 				8E1391141F687BB400A16458 /* MinisumoApp */,
 				8E1391131F687BB400A16458 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		8E1391131F687BB400A16458 /* Products */ = {
 			isa = PBXGroup;
@@ -57,12 +67,16 @@
 			isa = PBXGroup;
 			children = (
 				8E1391151F687BB400A16458 /* AppDelegate.swift */,
-				8E1391171F687BB400A16458 /* ViewController.swift */,
+				8E1391171F687BB400A16458 /* MainViewController.swift */,
 				8E1391191F687BB400A16458 /* Main.storyboard */,
 				8E13911C1F687BB400A16458 /* Assets.xcassets */,
 				8E13911E1F687BB400A16458 /* LaunchScreen.storyboard */,
 				8E1391211F687BB400A16458 /* Info.plist */,
 				8E1391271F687BC400A16458 /* BluetoothSerial.swift */,
+				8E1391291F687DB800A16458 /* ScannerViewController.swift */,
+				8E13912B1F687DEE00A16458 /* InitialViewController.swift */,
+				8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */,
+				8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */,
 			);
 			path = MinisumoApp;
 			sourceTree = "<group>";
@@ -140,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E1391181F687BB400A16458 /* ViewController.swift in Sources */,
+				8E1391181F687BB400A16458 /* MainViewController.swift in Sources */,
 				8E1391161F687BB400A16458 /* AppDelegate.swift in Sources */,
+				8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */,
+				8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */,
 				8E1391281F687BC400A16458 /* BluetoothSerial.swift in Sources */,
+				8E13912A1F687DB800A16458 /* ScannerViewController.swift in Sources */,
+				8E13912C1F687DEE00A16458 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VAAW96P2HT;
 				INFOPLIST_FILE = MinisumoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lukaszm.MinisumoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VAAW96P2HT;
 				INFOPLIST_FILE = MinisumoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lukaszm.MinisumoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +324,7 @@
 				8E1391261F687BB400A16458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

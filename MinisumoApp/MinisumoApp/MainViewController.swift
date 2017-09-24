@@ -1,14 +1,6 @@
-//
-//  ViewController.swift
-//  MinisumoApp
-//
-//  Created by Lukasz Milaszewski on 12/09/17.
-//  Copyright © 2017 Lukasz Milaszewski. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

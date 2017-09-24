@@ -3,7 +3,7 @@ import CoreBluetooth
 
 /// Global serial handler, don't forget to initialize it with init(delgate:)
 var serial: BluetoothSerial!
-
+var msg: String = "0"
 // Delegate functions
 protocol BluetoothSerialDelegate {
   // ** Required **
