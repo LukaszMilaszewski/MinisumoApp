@@ -3,7 +3,8 @@ import CoreBluetooth
 
 class CheckSensorsViewController: UIViewController, BluetoothSerialDelegate {
   
-  
+  let ms = 1000
+  var msg = Array(repeating: "0", count: 10)
   
   @IBOutlet weak var leftSensor: UILabel!
   @IBOutlet weak var upperLeftSensor: UILabel!
@@ -18,16 +19,23 @@ class CheckSensorsViewController: UIViewController, BluetoothSerialDelegate {
     super.viewWillAppear(true)
     leftSensor.text = " "
     serial.delegate = self
-    msg = "9"
-    serial.sendMessageToDevice(msg)
- 
-
+    msg[0] = "4"
+    serial.sendMessageToDevice(msg.joined())
+    print("transmit: \(msg.joined())")
   }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(true)
+    print("view disappeard")
+    msg[0] = "0"
+    serial.sendMessageToDevice(msg.joined())
+  }
+  
   //MARK:- BluetoothSerialDelegate
   
   func serialDidReceiveString(_ message: String) {
     let messageArray = Array(message.characters)
-    print("\(message)")
+    print("received: \(message)")
     if messageArray.count == 4 {
       if messageArray[0] == "1" {
         leftSensor.text = "work"
@@ -53,7 +61,9 @@ class CheckSensorsViewController: UIViewController, BluetoothSerialDelegate {
         rightSensor.text = " "
       }
       
-      serial.sendMessageToDevice(msg)
+      usleep(useconds_t(20 * ms))
+      serial.sendMessageToDevice(msg.joined())
+      print("sent: \(msg.joined())")
     }
   }
   
