@@ -51,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="401" y="119"/>
         </scene>
-        <!--Item-->
+        <!--Tires-->
         <scene sceneID="SZw-2L-Rg3">
             <objects>
                 <viewController id="BQ5-AG-6n4" customClass="CleaningTiresViewController" customModule="MinisumoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,6 +77,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8oL-uU-J76">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Cleaning tires" id="dP5-QJ-G6h">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="2v9-8t-GXB">
+                                            <connections>
+                                                <segue destination="OcX-dm-zau" kind="show" id="ndG-LP-MaB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-yT-I5F">
                                 <rect key="frame" x="241" y="274" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -87,7 +100,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="MP0-Tw-gqi"/>
+                    <tabBarItem key="tabBarItem" title="Tires" id="MP0-Tw-gqi"/>
                     <connections>
                         <outlet property="switchOutlet" destination="9Jm-iy-u1w" id="1ak-IV-N2r"/>
                     </connections>
@@ -96,7 +109,7 @@
             </objects>
             <point key="canvasLocation" x="399" y="1662"/>
         </scene>
-        <!--Item 2-->
+        <!--Motors-->
         <scene sceneID="01K-Qi-rnU">
             <objects>
                 <viewController id="GzC-9d-VoT" customClass="CheckMotorsViewController" customModule="MinisumoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,10 +177,23 @@
                                     <action selector="RightMotor:" destination="GzC-9d-VoT" eventType="valueChanged" id="P2R-k2-kck"/>
                                 </connections>
                             </slider>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-fX-P9x">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Motors" id="OcK-cb-KZP">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="uag-Lj-Oy2">
+                                            <connections>
+                                                <segue destination="OcX-dm-zau" kind="show" id="a7E-X1-SZI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="D2j-EX-Xk6"/>
+                    <tabBarItem key="tabBarItem" title="Motors" id="D2j-EX-Xk6"/>
                     <connections>
                         <outlet property="leftMotorSlider" destination="BRd-Ej-OtS" id="SVU-tX-Q7r"/>
                         <outlet property="rightMotorSlider" destination="TqF-eC-Se4" id="Mlf-tk-Z4k"/>
@@ -177,7 +203,7 @@
             </objects>
             <point key="canvasLocation" x="1082" y="1662"/>
         </scene>
-        <!--Item 1-->
+        <!--Sensors-->
         <scene sceneID="wFf-V5-UnM">
             <objects>
                 <viewController id="HJY-9b-bxX" customClass="CheckSensorsViewController" customModule="MinisumoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -217,10 +243,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Af4-Df-FyD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Sensors" id="1Ps-sm-ubV">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="xcV-tZ-Wec">
+                                            <connections>
+                                                <segue destination="OcX-dm-zau" kind="show" id="sCe-0p-DDO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="dWl-Os-hza"/>
+                    <tabBarItem key="tabBarItem" title="Sensors" id="dWl-Os-hza"/>
                     <connections>
                         <outlet property="leftSensor" destination="iH4-bw-dyK" id="dY0-q0-8wI"/>
                         <outlet property="rightSensor" destination="5bp-pS-m5y" id="b1a-44-bJF"/>
@@ -398,4 +437,7 @@
             <point key="canvasLocation" x="1082" y="119"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="a7E-X1-SZI"/>
+    </inferredMetricsTieBreakers>
 </document>
