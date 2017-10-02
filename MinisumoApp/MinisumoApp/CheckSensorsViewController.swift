@@ -27,6 +27,7 @@ class CheckSensorsViewController: UIViewController, BluetoothSerialDelegate {
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(true)
     print("view disappeard")
+    usleep(useconds_t(20 * ms))
     msg[0] = "0"
     serial.sendMessageToDevice(msg.joined())
   }

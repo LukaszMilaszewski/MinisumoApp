@@ -54,7 +54,7 @@
         <!--Item-->
         <scene sceneID="SZw-2L-Rg3">
             <objects>
-                <viewController id="BQ5-AG-6n4" sceneMemberID="viewController">
+                <viewController id="BQ5-AG-6n4" customClass="CleaningTiresViewController" customModule="MinisumoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pxR-0t-kN4"/>
                         <viewControllerLayoutGuide type="bottom" id="IPf-Ba-fqe"/>
@@ -62,13 +62,39 @@
                     <view key="view" contentMode="scaleToFill" id="c31-Gm-9X3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Jm-iy-u1w">
+                                <rect key="frame" x="136" y="269" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changedState:" destination="BQ5-AG-6n4" eventType="valueChanged" id="dh9-a4-iNh"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRR-Sp-fKh">
+                                <rect key="frame" x="39" y="274" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-yT-I5F">
+                                <rect key="frame" x="241" y="274" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="MP0-Tw-gqi"/>
+                    <connections>
+                        <outlet property="switchOutlet" destination="9Jm-iy-u1w" id="1ak-IV-N2r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khh-78-XhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2903" y="1675"/>
+            <point key="canvasLocation" x="399" y="1662"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="01K-Qi-rnU">
@@ -142,10 +168,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="D2j-EX-Xk6"/>
+                    <connections>
+                        <outlet property="leftMotorSlider" destination="BRd-Ej-OtS" id="SVU-tX-Q7r"/>
+                        <outlet property="rightMotorSlider" destination="TqF-eC-Se4" id="Mlf-tk-Z4k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oew-kP-hoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3915" y="1214.7887323943662"/>
+            <point key="canvasLocation" x="1082" y="1662"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="wFf-V5-UnM">
@@ -200,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCb-fa-NS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3915" y="552"/>
+            <point key="canvasLocation" x="399" y="867"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Frz-mu-ukg">
@@ -264,7 +294,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9K-EP-Ifd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2903" y="883"/>
+            <point key="canvasLocation" x="1082" y="867"/>
         </scene>
         <!--Scanning...-->
         <scene sceneID="C6I-Jv-Vle">
@@ -287,7 +317,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i1S-1C-7tR" id="SEh-zT-OJf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4M-sK-ZWo">

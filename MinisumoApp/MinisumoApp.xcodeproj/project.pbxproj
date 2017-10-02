@@ -15,6 +15,7 @@
 		8E1391281F687BC400A16458 /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1391271F687BC400A16458 /* BluetoothSerial.swift */; };
 		8E13912A1F687DB800A16458 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1391291F687DB800A16458 /* ScannerViewController.swift */; };
 		8E13912C1F687DEE00A16458 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13912B1F687DEE00A16458 /* InitialViewController.swift */; };
+		8E3D825A1F82CCBE00D4C699 /* CleaningTiresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D82591F82CCBE00D4C699 /* CleaningTiresViewController.swift */; };
 		8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */; };
 		8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		8E1391271F687BC400A16458 /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; tabWidth = 2; };
 		8E1391291F687DB800A16458 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		8E13912B1F687DEE00A16458 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		8E3D82591F82CCBE00D4C699 /* CleaningTiresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningTiresViewController.swift; sourceTree = "<group>"; };
 		8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMotorsViewController.swift; sourceTree = "<group>"; };
 		8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckSensorsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				8E13912B1F687DEE00A16458 /* InitialViewController.swift */,
 				8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */,
 				8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */,
+				8E3D82591F82CCBE00D4C699 /* CleaningTiresViewController.swift */,
 			);
 			path = MinisumoApp;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1391181F687BB400A16458 /* MainViewController.swift in Sources */,
+				8E3D825A1F82CCBE00D4C699 /* CleaningTiresViewController.swift in Sources */,
 				8E1391161F687BB400A16458 /* AppDelegate.swift in Sources */,
 				8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */,
 				8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */,

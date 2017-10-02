@@ -12,6 +12,9 @@ class CheckMotorsViewController: UIViewController, BluetoothSerialDelegate {
   var right_motor_direction = 1
   var right_motor_power = 0
 
+    @IBOutlet weak var leftMotorSlider: UISlider!
+    @IBOutlet weak var rightMotorSlider: UISlider!
+    
   var msg = Array(repeating: "0", count: 10)
   
     @IBAction func leftMotor(_ sender: UISlider) {
@@ -78,6 +81,9 @@ class CheckMotorsViewController: UIViewController, BluetoothSerialDelegate {
     super.viewWillAppear(true)
     serial.delegate = self
     print("view loaded")
+    leftMotorSlider.value = 0
+    rightMotorSlider.value = 0
+    usleep(useconds_t(20 * ms))
     msg[0] = "2"
     serial.sendMessageToDevice(msg.joined())
   }
@@ -86,8 +92,6 @@ class CheckMotorsViewController: UIViewController, BluetoothSerialDelegate {
   
   func serialDidReceiveString(_ message: String) {
     print("received message: \(message)")
-//    print("sendind message: \(msg.joined())")
-//    serial.sendMessageToDevice(msg.joined())
   }
   
   func serialDidChangeState() {
