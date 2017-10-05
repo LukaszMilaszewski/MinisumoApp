@@ -16,6 +16,9 @@
 		8E13912C1F687DEE00A16458 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13912B1F687DEE00A16458 /* InitialViewController.swift */; };
 		8E3D825A1F82CCBE00D4C699 /* CleaningTiresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D82591F82CCBE00D4C699 /* CleaningTiresViewController.swift */; };
 		8E3D825E1F82D6E800D4C699 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D825D1F82D6E800D4C699 /* MainViewController.swift */; };
+		8E3D82601F8671BF00D4C699 /* JoystickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D825F1F8671BF00D4C699 /* JoystickView.swift */; };
+		8E3D82621F86780E00D4C699 /* JoystickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D82611F86780E00D4C699 /* JoystickViewController.swift */; };
+		8E3D82641F869D8C00D4C699 /* CoreGraphics+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D82631F869D8C00D4C699 /* CoreGraphics+Additions.swift */; };
 		8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */; };
 		8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,9 @@
 		8E13912B1F687DEE00A16458 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		8E3D82591F82CCBE00D4C699 /* CleaningTiresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningTiresViewController.swift; sourceTree = "<group>"; };
 		8E3D825D1F82D6E800D4C699 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8E3D825F1F8671BF00D4C699 /* JoystickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickView.swift; sourceTree = "<group>"; };
+		8E3D82611F86780E00D4C699 /* JoystickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickViewController.swift; sourceTree = "<group>"; };
+		8E3D82631F869D8C00D4C699 /* CoreGraphics+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Additions.swift"; sourceTree = "<group>"; };
 		8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMotorsViewController.swift; sourceTree = "<group>"; };
 		8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckSensorsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +86,9 @@
 				8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */,
 				8E3D82591F82CCBE00D4C699 /* CleaningTiresViewController.swift */,
 				8E3D825D1F82D6E800D4C699 /* MainViewController.swift */,
+				8E3D825F1F8671BF00D4C699 /* JoystickView.swift */,
+				8E3D82611F86780E00D4C699 /* JoystickViewController.swift */,
+				8E3D82631F869D8C00D4C699 /* CoreGraphics+Additions.swift */,
 			);
 			path = MinisumoApp;
 			sourceTree = "<group>";
@@ -157,9 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3D82641F869D8C00D4C699 /* CoreGraphics+Additions.swift in Sources */,
 				8E3D825A1F82CCBE00D4C699 /* CleaningTiresViewController.swift in Sources */,
 				8E1391161F687BB400A16458 /* AppDelegate.swift in Sources */,
+				8E3D82601F8671BF00D4C699 /* JoystickView.swift in Sources */,
 				8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */,
+				8E3D82621F86780E00D4C699 /* JoystickViewController.swift in Sources */,
 				8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */,
 				8E1391281F687BC400A16458 /* BluetoothSerial.swift in Sources */,
 				8E13912A1F687DB800A16458 /* ScannerViewController.swift in Sources */,

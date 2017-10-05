@@ -354,7 +354,7 @@
         <!--Joystick-->
         <scene sceneID="V4Q-jf-jOP">
             <objects>
-                <viewController id="yBQ-o2-V86" sceneMemberID="viewController">
+                <viewController id="yBQ-o2-V86" customClass="JoystickViewController" customModule="MinisumoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aYm-QB-aVh"/>
                         <viewControllerLayoutGuide type="bottom" id="a8F-Le-rau"/>
@@ -362,13 +362,33 @@
                     <view key="view" contentMode="scaleToFill" id="XEf-iE-9Vr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rm5-KI-pLQ">
+                                <rect key="frame" x="16" y="161" width="124" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzo-88-wKz">
+                                <rect key="frame" x="16" y="120" width="124" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Joystick" id="5s5-al-Oat"/>
+                    <connections>
+                        <outlet property="leftMagnitude" destination="Gzo-88-wKz" id="td9-6q-Dqd"/>
+                        <outlet property="leftTheta" destination="rm5-KI-pLQ" id="fXn-4M-dyL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uqv-HQ-QDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5408" y="2095"/>
+            <point key="canvasLocation" x="5407.5" y="2094.7183098591549"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="umK-eZ-ch5">
