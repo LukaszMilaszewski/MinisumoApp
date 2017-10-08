@@ -121,7 +121,7 @@ public final class JoyStickView: UIView {
     handleImageView = UIImageView(image: handleImage)
     makeHandleImage()
     addSubview(handleImageView)
-    handleImageView.frame = bounds.insetBy(dx: 0.15 * bounds.width, dy: 0.15 * bounds.height)
+    handleImageView.frame = bounds.insetBy(dx: 0.23 * bounds.width, dy: 0.23 * bounds.height)
     
     tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(resetFrame))
     tapGestureRecognizer!.numberOfTapsRequired = 2
@@ -227,7 +227,7 @@ public final class JoyStickView: UIView {
     
     // Calculate displacements between given location and our frame's center
     //
-    let delta = location - frame.mid 
+    let delta = location - frame.mid
     
     // Calculate normalized displacement
     //
