@@ -335,7 +335,7 @@
         <!--Gyroscope-->
         <scene sceneID="bAC-9G-hR2">
             <objects>
-                <viewController id="igv-tg-AlX" sceneMemberID="viewController">
+                <viewController id="igv-tg-AlX" customClass="GyroscopeViewController" customModule="MinisumoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WId-Mu-J9e"/>
                         <viewControllerLayoutGuide type="bottom" id="Gwz-6Z-5tX"/>
@@ -343,13 +343,27 @@
                     <view key="view" contentMode="scaleToFill" id="wXv-VC-O4T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To start steering robot hit start button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiE-Jw-PWr">
+                                <rect key="frame" x="16" y="62" width="288" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hg-N1-LQZ">
+                                <rect key="frame" x="73" y="299" width="173" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gyroscope" id="qbA-pv-Zm1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JS-A3-cCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5409" y="1365"/>
+            <point key="canvasLocation" x="5407.5" y="1364.7887323943662"/>
         </scene>
         <!--Joystick-->
         <scene sceneID="V4Q-jf-jOP">

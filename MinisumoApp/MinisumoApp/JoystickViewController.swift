@@ -1,15 +1,7 @@
-//
-//  ViewController.swift
-//  JoystickTestApp
-//
-//  Created by Bradley Howes on 8/24/17.
-//  Copyright © 2017 Bradl Howes. All rights reserved.
-//
-
 import UIKit
 import CoreBluetooth
 
-class JoystickViewController: UIViewController {
+class JoystickViewController: UIViewController, BluetoothSerialDelegate {
   
   @IBOutlet weak var leftMagnitude: UILabel!
   @IBOutlet weak var leftTheta: UILabel!
@@ -24,7 +16,7 @@ class JoystickViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     
     super.viewWillAppear(animated)
-    
+    serial.delegate = self
     msg[0] = "5"
     let rect = view.frame
     let size = CGSize(width: 150.0, height: 150.0)
