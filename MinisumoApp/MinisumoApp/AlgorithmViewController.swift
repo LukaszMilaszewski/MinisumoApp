@@ -63,6 +63,10 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
     }
   }
   
+  func buttonClick(sender: UIButton) {
+    print(sender.tag)
+  }
+  
   func loadAlgorithms() {
     for (index, algorithm) in algorithms.enumerated() {
       if let algorithmView = Bundle.main.loadNibNamed("AlgorithmView", owner: self, options: nil)?.first as? AlgorithmView {
@@ -71,6 +75,8 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
         let imageView = UIImageView(image: video)
         imageView.frame = CGRect(x: 16, y: 20, width: 288, height: 128)
         algorithmView.addSubview(imageView)
+        algorithmView.stateButton.tag = index
+        algorithmView.stateButton.addTarget(self, action: #selector(AlgorithmViewController.buttonClick(sender:)), for: .touchUpInside)
 //        algorithmView.backgroundColor = UIColor(colorLiteralRed: (50 * Float(index))/255, green: 2/255, blue: 100/255, alpha: 1)
         
         scrollView.addSubview(algorithmView)
