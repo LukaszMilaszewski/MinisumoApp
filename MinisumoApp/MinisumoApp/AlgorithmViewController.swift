@@ -19,6 +19,7 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    msg[0] = "1"
     let numberOfAlgorithms = 4
     
     competitionStatesArray = Array(repeating: "0", count: numberOfAlgorithms)
@@ -76,8 +77,25 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
   }
   
   func buttonClick(sender: UIButton) {
+    if sender.title(for: .normal) == "START" {
+      msg[0] = "1"
+      sender.setTitle("STOP", for: .normal)
+    } else {
+      msg[0] = "0"
+      sender.setTitle("START", for: .normal)
+    }
+    
+    print("------------------------------")
     print("competitions: \(competitionStatesArray.joined())")
     print("speeds: \(speedsArray.joined())")
+    
+    let whichAlgorithm = sender.tag
+    msg[1] = String(describing: whichAlgorithm)
+    msg[2] = competitionStatesArray[whichAlgorithm]
+    msg[3] = speedsArray[2 * whichAlgorithm]
+    msg[4] = speedsArray[2 * whichAlgorithm + 1]
+    
+    print("MESSAGE: \(msg.joined())")
   }
   
   func competitionSwitched(sender: UISwitch) {
