@@ -20,6 +20,10 @@
 		8E3D82621F86780E00D4C699 /* JoystickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D82611F86780E00D4C699 /* JoystickViewController.swift */; };
 		8E3D82641F869D8C00D4C699 /* CoreGraphics+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D82631F869D8C00D4C699 /* CoreGraphics+Additions.swift */; };
 		8E3D827E1F8A33B000D4C699 /* GyroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D827D1F8A33B000D4C699 /* GyroscopeViewController.swift */; };
+		8E3DC5DA1F8FDAD2008FF61B /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DC5D91F8FDAD2008FF61B /* AlgorithmViewController.swift */; };
+		8E3DC5DC1F8FE41C008FF61B /* AlgorithmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DC5DB1F8FE41C008FF61B /* AlgorithmView.swift */; };
+		8E3DC5E21F920DE1008FF61B /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DC5E11F920DE1008FF61B /* Algorithm.swift */; };
+		8E3DC5E41F921BAF008FF61B /* AlgorithmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3DC5E31F921BAF008FF61B /* AlgorithmView.xib */; };
 		8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */; };
 		8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +44,10 @@
 		8E3D82611F86780E00D4C699 /* JoystickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickViewController.swift; sourceTree = "<group>"; };
 		8E3D82631F869D8C00D4C699 /* CoreGraphics+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Additions.swift"; sourceTree = "<group>"; };
 		8E3D827D1F8A33B000D4C699 /* GyroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroscopeViewController.swift; sourceTree = "<group>"; };
+		8E3DC5D91F8FDAD2008FF61B /* AlgorithmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
+		8E3DC5DB1F8FE41C008FF61B /* AlgorithmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmView.swift; sourceTree = "<group>"; };
+		8E3DC5E11F920DE1008FF61B /* Algorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
+		8E3DC5E31F921BAF008FF61B /* AlgorithmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlgorithmView.xib; sourceTree = "<group>"; };
 		8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMotorsViewController.swift; sourceTree = "<group>"; };
 		8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckSensorsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +100,10 @@
 				8E3D82611F86780E00D4C699 /* JoystickViewController.swift */,
 				8E3D82631F869D8C00D4C699 /* CoreGraphics+Additions.swift */,
 				8E3D827D1F8A33B000D4C699 /* GyroscopeViewController.swift */,
+				8E3DC5D91F8FDAD2008FF61B /* AlgorithmViewController.swift */,
+				8E3DC5DB1F8FE41C008FF61B /* AlgorithmView.swift */,
+				8E3DC5E11F920DE1008FF61B /* Algorithm.swift */,
+				8E3DC5E31F921BAF008FF61B /* AlgorithmView.xib */,
 			);
 			path = MinisumoApp;
 			sourceTree = "<group>";
@@ -156,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3DC5E41F921BAF008FF61B /* AlgorithmView.xib in Resources */,
 				8E1391201F687BB400A16458 /* LaunchScreen.storyboard in Resources */,
 				8E13911D1F687BB400A16458 /* Assets.xcassets in Resources */,
 				8E13911B1F687BB400A16458 /* Main.storyboard in Resources */,
@@ -173,8 +186,11 @@
 				8E3D825A1F82CCBE00D4C699 /* CleaningTiresViewController.swift in Sources */,
 				8E1391161F687BB400A16458 /* AppDelegate.swift in Sources */,
 				8E3D82601F8671BF00D4C699 /* JoystickView.swift in Sources */,
+				8E3DC5E21F920DE1008FF61B /* Algorithm.swift in Sources */,
 				8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */,
 				8E3D82621F86780E00D4C699 /* JoystickViewController.swift in Sources */,
+				8E3DC5DA1F8FDAD2008FF61B /* AlgorithmViewController.swift in Sources */,
+				8E3DC5DC1F8FE41C008FF61B /* AlgorithmView.swift in Sources */,
 				8E3D827E1F8A33B000D4C699 /* GyroscopeViewController.swift in Sources */,
 				8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */,
 				8E1391281F687BC400A16458 /* BluetoothSerial.swift in Sources */,

@@ -271,6 +271,9 @@
                                 <rect key="frame" x="119" y="254" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Automatic"/>
+                                <connections>
+                                    <segue destination="fhk-ci-2HP" kind="show" id="c0R-0t-Lu1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -508,7 +511,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i1S-1C-7tR" id="SEh-zT-OJf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4M-sK-ZWo">
@@ -551,6 +554,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yD-C2-jZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1789" y="118"/>
+        </scene>
+        <!--Algorithm View Controller-->
+        <scene sceneID="WXK-Np-8Bd">
+            <objects>
+                <viewController id="fhk-ci-2HP" customClass="AlgorithmViewController" customModule="MinisumoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qMX-jP-oja"/>
+                        <viewControllerLayoutGuide type="bottom" id="uGb-Fk-kL2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MdR-XQ-nz2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="268-gX-g65">
+                                <rect key="frame" x="0.0" y="150" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fhk-ci-2HP" id="NQm-II-C8q"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jeI-4i-W5v">
+                                <rect key="frame" x="76" y="496" width="168" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="fhk-ci-2HP" eventType="valueChanged" id="VmH-IP-3q7"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.3467078307" blue="0.2498288461" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="jeI-4i-W5v" id="O1y-bk-aai"/>
+                        <outlet property="scrollView" destination="268-gX-g65" id="YqT-Lk-s05"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMj-Oe-MeH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3144.375" y="122.53521126760563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ksR-JK-XIn">

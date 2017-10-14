@@ -67,6 +67,7 @@ class GyroscopeViewController: UIViewController, BluetoothSerialDelegate {
           power *= -1
           leftDirection = "1"
           rightDirection = "1"
+//          turn *= -1
         }
         
         if turn > 0 {
@@ -104,6 +105,11 @@ class GyroscopeViewController: UIViewController, BluetoothSerialDelegate {
   
   func stopAcc() {
     motionManager.stopDeviceMotionUpdates()
+    msg[3] = "0"
+    msg[4] = "0"
+    msg[5] = "0"
+    msg[6] = "0"
+    serial.sendMessageToDevice(msg.joined())
   }
   
   override func viewWillAppear(_ animated: Bool) {
