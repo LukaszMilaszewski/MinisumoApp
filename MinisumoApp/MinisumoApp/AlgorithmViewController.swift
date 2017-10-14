@@ -1,7 +1,7 @@
 import UIKit
 import CoreBluetooth
 
-class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
+class AlgorithmViewController: UIViewController, UIScrollViewDelegate, BluetoothSerialDelegate {
   
   var algorithms = [Algorithm]()
   
@@ -96,6 +96,7 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
     msg[4] = speedsArray[2 * whichAlgorithm + 1]
     
     print("MESSAGE: \(msg.joined())")
+    serial.sendMessageToDevice(msg.joined())
   }
   
   func competitionSwitched(sender: UISwitch) {
@@ -130,5 +131,19 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
         algorithmView.frame.origin.x = CGFloat(index) * self.view.bounds.size.width
       }
     }
+  }
+  
+  //MARK:- BluetoothSerialDelegate
+  
+  func serialDidReceiveString(_ message: String) {
+    print("received message: \(message)")
+  }
+  
+  func serialDidChangeState() {
+    if serial.centralManager.state != .poweredOn {
+    }
+  }
+  
+  func serialDidDisconnect(_ peripheral: CBPeripheral, error: NSError?) {
   }
 }
