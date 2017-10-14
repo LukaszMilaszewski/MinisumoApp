@@ -9,6 +9,8 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
   let ms = 1000
   
   let numberOfAlgorithms = 4
+  var algorithmsSwitch = Array(repeating: "0", count: 4)
+  
   @IBOutlet weak var pageControl: UIPageControl!
   @IBOutlet weak var scrollView: UIScrollView!
   @IBOutlet weak var label: UILabel!
@@ -67,8 +69,12 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
   }
   
   func buttonClick(sender: UIButton) {
-    
-    print(sender.tag)
+    print(algorithmsSwitch.joined())
+  }
+  
+  func competitionSwitched(sender: UISwitch) {
+    print("tag: \(sender.tag)   state: \(sender.isOn)")
+    algorithmsSwitch[sender.tag] = String(describing: NSNumber(value: sender.isOn))
   }
   
   func loadAlgorithms() {
@@ -81,8 +87,9 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
         algorithmView.addSubview(imageView)
         algorithmView.stateButton.tag = index
         algorithmView.stateButton.addTarget(self, action: #selector(AlgorithmViewController.buttonClick(sender:)), for: .touchUpInside)
-//        algorithmView.backgroundColor = UIColor(colorLiteralRed: (50 * Float(index))/255, green: 2/255, blue: 100/255, alpha: 1)
-        
+        algorithmView.competitionSwitch.tag = index
+        algorithmView.competitionSwitch.addTarget(self, action: #selector(AlgorithmViewController.competitionSwitched(sender:)), for: .touchUpInside)
+       
         scrollView.addSubview(algorithmView)
         algorithmView.frame.size.width = self.view.bounds.size.width
         algorithmView.frame.origin.x = CGFloat(index) * self.view.bounds.size.width

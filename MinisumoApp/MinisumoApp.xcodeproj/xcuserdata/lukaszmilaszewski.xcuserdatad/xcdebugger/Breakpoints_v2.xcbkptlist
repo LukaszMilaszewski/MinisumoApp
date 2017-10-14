@@ -26,7 +26,7 @@
                   moduleName = "MinisumoApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lukaszmilaszewski/workspace/MinisumoApp/MinisumoApp/MinisumoApp/GyroscopeViewController.swift"
-                  timestampString = "529704289.599926"
+                  timestampString = "529706868.576423"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
@@ -41,7 +41,7 @@
                   moduleName = "MinisumoApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lukaszmilaszewski/workspace/MinisumoApp/MinisumoApp/MinisumoApp/GyroscopeViewController.swift"
-                  timestampString = "529704289.603116"
+                  timestampString = "529706868.579955"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MinisumoApp/AlgorithmViewController.swift"
-            timestampString = "529701176.455069"
+            timestampString = "529706901.423937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -70,16 +70,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MinisumoApp/AlgorithmViewController.swift"
-            timestampString = "529704288.522683"
+            timestampString = "529706901.423937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "pageChanged(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MinisumoApp/AlgorithmViewController.swift"
+            timestampString = "529706866.363585"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "competitionSwitched(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
