@@ -8,8 +8,9 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
   var msg = Array(repeating: "0", count: 10)
   let ms = 1000
   
-  let numberOfAlgorithms = 4
-  var algorithmsSwitch = Array(repeating: "0", count: 4)
+  var competitionStatesArray: [String] = []
+  var speedsArray: [String] = []
+
   
   @IBOutlet weak var pageControl: UIPageControl!
   @IBOutlet weak var scrollView: UIScrollView!
@@ -17,6 +18,12 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    let numberOfAlgorithms = 4
+    
+    competitionStatesArray = Array(repeating: "0", count: numberOfAlgorithms)
+    speedsArray = Array(repeating: "0", count: numberOfAlgorithms * 2)
+    
   	pageControl.numberOfPages = numberOfAlgorithms
     pageControl.currentPage = 0
   	
@@ -69,12 +76,20 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
   }
   
   func buttonClick(sender: UIButton) {
-    print(algorithmsSwitch.joined())
+    print("competitions: \(competitionStatesArray.joined())")
+    print("speeds: \(speedsArray.joined())")
   }
   
   func competitionSwitched(sender: UISwitch) {
-    print("tag: \(sender.tag)   state: \(sender.isOn)")
-    algorithmsSwitch[sender.tag] = String(describing: NSNumber(value: sender.isOn))
+    competitionStatesArray[sender.tag] = String(describing: NSNumber(value: sender.isOn))
+  }
+  
+  func speedFieldText(sender: UITextField) {
+    let index = 2 * sender.tag
+    var value = Int(sender.text!)
+    if value! > 99 { value = 99 }
+    speedsArray[index] = String(describing: value! / 10)
+    speedsArray[index+1] = String(describing: value! % 10)
   }
   
   func loadAlgorithms() {
@@ -89,6 +104,8 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
         algorithmView.stateButton.addTarget(self, action: #selector(AlgorithmViewController.buttonClick(sender:)), for: .touchUpInside)
         algorithmView.competitionSwitch.tag = index
         algorithmView.competitionSwitch.addTarget(self, action: #selector(AlgorithmViewController.competitionSwitched(sender:)), for: .touchUpInside)
+        algorithmView.speedField.tag = index
+        algorithmView.speedField.addTarget(self, action: #selector(AlgorithmViewController.speedFieldText(sender:)), for: .editingDidEnd)
        
         scrollView.addSubview(algorithmView)
         algorithmView.frame.size.width = self.view.bounds.size.width

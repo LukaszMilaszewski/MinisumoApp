@@ -59,9 +59,10 @@
             <connections>
                 <outlet property="competitionSwitch" destination="ErQ-4x-a9w" id="0k7-5i-2Y6"/>
                 <outlet property="descriptionLabel" destination="FpU-HS-xPe" id="A76-Zo-JUO"/>
+                <outlet property="speedField" destination="ALx-N3-I7V" id="sNH-rB-oO2"/>
                 <outlet property="stateButton" destination="p4l-W1-EWZ" id="kZT-Ep-1Rr"/>
             </connections>
-            <point key="canvasLocation" x="-325" y="264"/>
+            <point key="canvasLocation" x="-656" y="264"/>
         </view>
     </objects>
 </document>
