@@ -24,6 +24,11 @@
 		8E3DC5DC1F8FE41C008FF61B /* AlgorithmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DC5DB1F8FE41C008FF61B /* AlgorithmView.swift */; };
 		8E3DC5E21F920DE1008FF61B /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DC5E11F920DE1008FF61B /* Algorithm.swift */; };
 		8E3DC5E41F921BAF008FF61B /* AlgorithmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3DC5E31F921BAF008FF61B /* AlgorithmView.xib */; };
+		8E3DC5E61F92455D008FF61B /* GifExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DC5E51F92455D008FF61B /* GifExtensions.swift */; };
+		8E3DC5EB1F924641008FF61B /* alg1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8E3DC5E71F924641008FF61B /* alg1.gif */; };
+		8E3DC5EC1F924641008FF61B /* alg2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8E3DC5E81F924641008FF61B /* alg2.gif */; };
+		8E3DC5ED1F924641008FF61B /* alg3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8E3DC5E91F924641008FF61B /* alg3.gif */; };
+		8E3DC5EE1F924641008FF61B /* alg4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8E3DC5EA1F924641008FF61B /* alg4.gif */; };
 		8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */; };
 		8E8EEA061F76E1130088E573 /* CheckSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +53,11 @@
 		8E3DC5DB1F8FE41C008FF61B /* AlgorithmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmView.swift; sourceTree = "<group>"; };
 		8E3DC5E11F920DE1008FF61B /* Algorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
 		8E3DC5E31F921BAF008FF61B /* AlgorithmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlgorithmView.xib; sourceTree = "<group>"; };
+		8E3DC5E51F92455D008FF61B /* GifExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifExtensions.swift; sourceTree = "<group>"; };
+		8E3DC5E71F924641008FF61B /* alg1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = alg1.gif; sourceTree = "<group>"; };
+		8E3DC5E81F924641008FF61B /* alg2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = alg2.gif; sourceTree = "<group>"; };
+		8E3DC5E91F924641008FF61B /* alg3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = alg3.gif; sourceTree = "<group>"; };
+		8E3DC5EA1F924641008FF61B /* alg4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = alg4.gif; sourceTree = "<group>"; };
 		8E7A76111F77FEDC009D9364 /* CheckMotorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMotorsViewController.swift; sourceTree = "<group>"; };
 		8E8EEA051F76E1130088E573 /* CheckSensorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckSensorsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +114,11 @@
 				8E3DC5DB1F8FE41C008FF61B /* AlgorithmView.swift */,
 				8E3DC5E11F920DE1008FF61B /* Algorithm.swift */,
 				8E3DC5E31F921BAF008FF61B /* AlgorithmView.xib */,
+				8E3DC5E51F92455D008FF61B /* GifExtensions.swift */,
+				8E3DC5E71F924641008FF61B /* alg1.gif */,
+				8E3DC5E81F924641008FF61B /* alg2.gif */,
+				8E3DC5E91F924641008FF61B /* alg3.gif */,
+				8E3DC5EA1F924641008FF61B /* alg4.gif */,
 			);
 			path = MinisumoApp;
 			sourceTree = "<group>";
@@ -170,7 +185,11 @@
 			files = (
 				8E3DC5E41F921BAF008FF61B /* AlgorithmView.xib in Resources */,
 				8E1391201F687BB400A16458 /* LaunchScreen.storyboard in Resources */,
+				8E3DC5EB1F924641008FF61B /* alg1.gif in Resources */,
+				8E3DC5ED1F924641008FF61B /* alg3.gif in Resources */,
+				8E3DC5EE1F924641008FF61B /* alg4.gif in Resources */,
 				8E13911D1F687BB400A16458 /* Assets.xcassets in Resources */,
+				8E3DC5EC1F924641008FF61B /* alg2.gif in Resources */,
 				8E13911B1F687BB400A16458 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +205,7 @@
 				8E3D825A1F82CCBE00D4C699 /* CleaningTiresViewController.swift in Sources */,
 				8E1391161F687BB400A16458 /* AppDelegate.swift in Sources */,
 				8E3D82601F8671BF00D4C699 /* JoystickView.swift in Sources */,
+				8E3DC5E61F92455D008FF61B /* GifExtensions.swift in Sources */,
 				8E3DC5E21F920DE1008FF61B /* Algorithm.swift in Sources */,
 				8E7A76121F77FEDC009D9364 /* CheckMotorsViewController.swift in Sources */,
 				8E3D82621F86780E00D4C699 /* JoystickViewController.swift in Sources */,
