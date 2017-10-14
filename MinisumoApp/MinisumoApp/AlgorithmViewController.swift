@@ -5,6 +5,9 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
   
   var algorithms = [Algorithm]()
   
+  var msg = Array(repeating: "0", count: 10)
+  let ms = 1000
+  
   let numberOfAlgorithms = 4
   @IBOutlet weak var pageControl: UIPageControl!
   @IBOutlet weak var scrollView: UIScrollView!
@@ -57,13 +60,14 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate {
     pageControl.currentPage = Int(page)
   }
   
-  func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-    if scrollView.contentOffset.y != 0 {
-      scrollView.contentOffset.y = 0
-    }
+  @IBAction func pageChanged(_ sender: UIPageControl) {
+    UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+    	self.scrollView.contentOffset = CGPoint(x: self.scrollView.bounds.size.width * CGFloat(sender.currentPage), y: 0)
+    }, completion: nil)
   }
   
   func buttonClick(sender: UIButton) {
+    
     print(sender.tag)
   }
   

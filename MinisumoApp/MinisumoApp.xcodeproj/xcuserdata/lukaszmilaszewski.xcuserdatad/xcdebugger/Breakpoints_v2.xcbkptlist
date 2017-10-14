@@ -26,7 +26,7 @@
                   moduleName = "MinisumoApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lukaszmilaszewski/workspace/MinisumoApp/MinisumoApp/MinisumoApp/GyroscopeViewController.swift"
-                  timestampString = "529671843.893166"
+                  timestampString = "529704289.599926"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
@@ -41,7 +41,7 @@
                   moduleName = "MinisumoApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lukaszmilaszewski/workspace/MinisumoApp/MinisumoApp/MinisumoApp/GyroscopeViewController.swift"
-                  timestampString = "529671843.897482"
+                  timestampString = "529704289.603116"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -58,12 +58,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MinisumoApp/AlgorithmViewController.swift"
-            timestampString = "529679808.978562"
+            timestampString = "529701176.455069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MinisumoApp/AlgorithmViewController.swift"
+            timestampString = "529704288.522683"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "pageChanged(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
