@@ -18,7 +18,7 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate, Bluetooth
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    self.title = "Algorithms"
     msg[0] = "1"
     let numberOfAlgorithms = 4
     
@@ -29,22 +29,22 @@ class AlgorithmViewController: UIViewController, UIScrollViewDelegate, Bluetooth
     pageControl.currentPage = 0
   	
     let alg1 = Algorithm()
-    alg1.description = "algorithm 1"
+    alg1.description = "algorithm 1 description ..."
     alg1.videoName = "alg1"
     algorithms.append(alg1)
     
     let alg2 = Algorithm()
-    alg2.description = "algorithm 2"
+    alg2.description = "algorithm 2 description ..."
     alg2.videoName = "alg2"
     algorithms.append(alg2)
     
     let alg3 = Algorithm()
-    alg3.description = "algorithm 3"
+    alg3.description = "algorithm 3 description ..."
     alg3.videoName = "alg3"
     algorithms.append(alg3)
     
     let alg4 = Algorithm()
-    alg4.description = "algorithm 4"
+    alg4.description = "algorithm 4 description ..."
     alg4.videoName = "alg4"
     algorithms.append(alg4)
     
